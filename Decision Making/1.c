@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+
+    // Number of people in the audience
+    int num = 100;
+    
+    // Conditional code inside decision making statement
+    if (num > 50) {
+        printf("Start the show");
+    }
+
+    return 0;
+}
