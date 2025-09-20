@@ -2,7 +2,7 @@
 
 int main() {
     int var;
-    int flag = 0;
+    int flag = 2;
 
     // using conditional operator to assign the value to var
     // according to the value of flag
