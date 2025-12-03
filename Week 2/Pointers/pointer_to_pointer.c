@@ -1,15 +1,17 @@
 #include <stdio.h>
 
-int main(){
-  int *ptr;
-  int x;
-  ptr = &x;
-  *ptr = 5;
+int square(int *a);
+int square(int *a){
+  *a = *a * *a;
+  printf("The number is now changed\n");
+}
 
-  printf("adress of pointer 1: %d\n",ptr);
-  int **pptr;
-  pptr = &ptr;
-  printf("adress of pointer 1 in pointer 2: %d\n",pptr);
-  printf("value of pointer 1: %d\n",*pptr);
+
+
+int main(){
+  int b = 5;
+  printf("%d\n",b);
+  square(&b);
+  printf("%d\n",b);
   return 0;
 }
